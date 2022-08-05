@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from demo.interface.club/limitless/demo/Template/layout_1/LTR/material/full/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Dec 2021 10:29:31 GMT -->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Yangi qo'shish</title>
+	<link rel="stylesheet" href="../../style/style.css">
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"
+		type="text/css">
+	<link href="../../style/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="../../style/assets/css/all.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="../../style/richtexteditor/rte_theme_default.css" />
+
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="../../style/js/main/jquery.min.js"></script>
+	<script src="../../style/js/main/bootstrap.bundle.min.js"></script>
+	<script src="../../global_assets/js/plugins/uploaders/fileinput/plugins/sortable.min.js"></script>
+	<script src="../../global_assets/js/plugins/uploaders/fileinput/fileinput.min.js"></script>
+	<script src="../../global_assets/js/demo_pages/uploader_bootstrap.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="../../style/js/plugins/visualization/d3/d3.min.js"></script>
+	<script src="../../style/js/plugins/visualization/d3/d3_tooltip.js"></script>
+	<script src="../../style/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="../../style/js/plugins/pickers/daterangepicker.js"></script>
+	<script src="../../style/assets/js/app.js"></script>
+	<script src="../../style/js/demo_pages/dashboard.js"></script>
+	<script src="../../style/js/demo_charts/pages/dashboard/light/streamgraph.js"></script>
+	<script src="../../style/js/demo_charts/pages/dashboard/light/sparklines.js"></script>
+	<script src="../../style/js/demo_charts/pages/dashboard/light/lines.js"></script>
+	<script src="../../style/js/demo_charts/pages/dashboard/light/areas.js"></script>
+	<script src="../../style/js/demo_charts/pages/dashboard/light/donuts.js"></script>
+	<script src="../../style/js/demo_charts/pages/dashboard/light/bars.js"></script>
+	<script src="../../style/js/demo_charts/pages/dashboard/light/progress.js"></script>
+	<script src="../../style/js/demo_charts/pages/dashboard/light/heatmaps.js"></script>
+	<script src="../../style/js/demo_charts/pages/dashboard/light/pies.js"></script>
+	<script src="../../style/js/demo_charts/pages/dashboard/light/bullets.js"></script>
+	<script src="../../style/js/plugins/ui/prism.min.js"></script>
+
+	<!-- /theme JS files -->
+	<script src="../../style/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="../../style/js/demo_pages/form_layouts.js"></script>
+	<!-- multi selec../t js files -->
+	<script src="../../style/js/plugins/notifications/pnotify.min.js"></script>
+	<script src="../../style/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+	<script src="../../style/js/demo_pages/form_multiselect.js"></script>
+
+	<!-- /theme JS files -->
+	<script src="../../style/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="../../style/js/demo_pages/form_layouts.js"></script>
+
+	<!-- slect js files -->
+	<script src="../../style/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+	<script src="../../style/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="../../style/js/demo_pages/form_select2.js"></script>
+
+	<!-- calendar js files -->
+	<script src="../../style/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="../../style/js/plugins/pickers/daterangepicker.js"></script>
+	<script src="../../style/js/plugins/pickers/pickadate/picker.js"></script>
+	<script src="../../style/js/plugins/pickers/pickadate/picker.date.js"></script>
+	<script src="../../style/js/plugins/pickers/pickadate/picker.time.js"></script>
+	<script src="../../style/js/plugins/pickers/pickadate/legacy.js"></script>
+	<script src="../../style/js/plugins/notifications/jgrowl.min.js"></script>
+	<script src="../../style/js/demo_pages/picker_date.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+	<script src="editor.js"></script>
+
+	<style>
+		.file-drop-zone {
+			height: 100px;
+			position: relative;
+		}
+
+		.file-drop-zone-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.richtexteditor {
+			height: 100vh;
+		}
+
+		.nav-tabs-solid-custom .nav-link.active {
+			background-color: #fff;
+			color: #000;
+			margin-top: 8px;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			padding-top: 12px;
+			font-weight: bold;
+		}
+
+		/* .NavLink li a {
+			margin-top: 0;
+		} */
+	</style>
+</head>
+
+<body>
+	<div class="navbar navbar-expand-lg navbar-white bg-white navbar-static shadow  bg-body rounded"
+		style="background-color: #fff;">
+		<div class="d-flex flex-1 d-lg-none">
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+		</div>
+		<div class="d-flex justify-content-center align-items-center" style="width: 50px">
+			<i class="icon-menu7 " style="font-size: 21px;"></i>
+		</div>
+		<div class="navbar-brand text-center d-flex justify-content-center align-items-center"
+			style="border-right: 4px solid #EEEded">
+			<a href="../../index.html">
+				<img src="../../style/images/d-doc.png" style="width:150px;height:auto" alt="">
+			</a>
+		</div>
+		<div class="row">
+			<div class="navbar-brand d-flex justify-content-between align-items-center">
+				<!-- <div class="col-lg-12"> -->
+				<div class="col-lg-1 ml-3">
+					<img src="../../style/images/gerb.svg" style="width: 100%;height:60px" alt="">
+				</div>
+				<div class="col-lg-11 d-flex justify-content-evenly align-items-center text-left">
+					<h6 class="text-wrap">Бухоро вилоят ҳокимлиги ҳузуридаги "Ахборот-коммуникация технологияларини
+						ривожлантириш маркази" ДУК</h6>
+				</div>
+				<!-- </div> -->
+			</div>
+		</div>
+
+
+
+		<div class="d-flex justify-content-end align-items-center flex-1 flex-lg-6 order-1 order-lg-2">
+			<ul class="navbar-nav flex-row">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link text-dark" style="font-weight: bold;">
+						<i class="icon-bell2"></i>
+						<span class="badge badge-danger badge-pill">5</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link navbar-nav-link-toggler text-dark" style="font-weight: bold;">
+						Chiqish<i class="icon-switch2" style="margin-left: 5px;"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="page-content">
+		<div class="sidebar sidebar-light sidebar-main sidebar-expand-lg sidebar-main-resized">
+			<div class="sidebar-content">
+				<div class="sidebar-section">
+					<div class="sidebar-user-material">
+						<div class="sidebar-section-body">
+							<div class="d-flex">
+								<div class="flex-1">
+									<button type="button"
+										class="btn btn-outline-light border-transparent btn-icon btn-sm rounded-pill">
+										<i class="icon-wrench"></i>
+									</button>
+								</div>
+								<a href="#" class="flex-1 text-center"><img
+										src="../../style/images/demo/users/face6.jpg"
+										class="img-fluid rounded-circle shadow-sm" width="80" height="80" alt=""></a>
+								<div class="flex-1 text-right">
+									<button type="button"
+										class="btn btn-outline-light border-transparent btn-icon rounded-pill btn-sm sidebar-control sidebar-main-resize d-none d-lg-inline-flex">
+										<i class="icon-transmission"></i>
+									</button>
+
+									<button type="button"
+										class="btn btn-outline-light border-transparent btn-icon rounded-pill btn-sm sidebar-mobile-main-toggle d-lg-none">
+										<i class="icon-cross2"></i>
+									</button>
+								</div>
+							</div>
+
+							<div class="text-center">
+								<h6 class="mb-0 text-white text-shadow-dark mt-3">Sobir Bobojonov</h6>
+							</div>
+						</div>
+
+						<div class="sidebar-user-material-footer">
+							<a href="#user-nav"
+								class="d-flex justify-content-between align-items-center text-shadow-dark dropdown-toggle"
+								data-toggle="collapse"><span> Sozlamalar</span></a>
+						</div>
+					</div>
+
+					<div class="collapse border-bottom" id="user-nav">
+						<ul class="nav nav-sidebar">
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<i class="icon-cog5"></i>
+									<span>Account settings</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<i class="icon-switch2"></i>
+									<span>Chiqish</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="sidebar-section">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+						<li class="nav-item-header">
+							<div class="text-uppercase font-size-xs line-height-xs mt-1">Dashboard</div> <i
+								class="icon-menu" title="Main"></i>
+						</li>
+
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Tuman haqida</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Basic components">
+
+								<li class="nav-item"><a href="#" class="nav-link">Umumiy
+										ma'lumot</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">Davlat
+										ramzlari</a></li>
+
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Milliy
+											valyuta</span></a>
+									<ul class="nav nav-group-sub" data-submenu-title="Basic components">
+										<li class="nav-item"><a href="#" class="nav-link">Qo'shish</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Tangalar</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Banknotalar</a></li>
+									</ul>
+								</li>
+
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Davlat
+											mukofotlari</span></a>
+									<ul class="nav nav-group-sub" data-submenu-title="Basic components">
+										<li class="nav-item"><a href="#" class="nav-link">Mukofotlar kategoriyasi</a>
+										</li>
+										<li class="nav-item"><a href="#" class="nav-link">Unvonlar</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Hokimlik to'g'risida</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Basic components">
+
+								<li class="nav-item"><a href="#" class="nav-link">Funksiya va vazifalari</a></li>
+
+
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Xalq
+											deputatlari</span></a>
+									<ul class="nav nav-group-sub" data-submenu-title="Basic components">
+										<li class="nav-item"><a href="#" class="nav-link">Deputatlar kategoriyasi</a>
+										</li>
+										<li class="nav-item"><a href="#" class="nav-link">Xalq deputatlari</a></li>
+									</ul>
+								</li>
+
+								<li class="nav-item"><a href="#" class="nav-link">Hokim</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">Rahbariyat</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">Tarkibiy tuzilma</a></li>
+
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Tarkibiy
+											bo'linma</span></a>
+									<ul class="nav nav-group-sub" data-submenu-title="Basic components">
+										<li class="nav-item"><a href="#" class="nav-link">Bo'lim</a> </li>
+										<li class="nav-item"><a href="#" class="nav-link">Bo'lim xodimlari</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Hokimlik tarixi</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Basic components">
+
+								<li class="nav-item"><a href="#" class="nav-link">Funksiya va vazifalari</a></li>
+
+
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Xalq
+											deputatlari</span></a>
+									<ul class="nav nav-group-sub" data-submenu-title="Basic components">
+										<li class="nav-item"><a href="#" class="nav-link">Deputatlar kategoriyasi</a>
+										</li>
+										<li class="nav-item"><a href="#" class="nav-link">Xalq deputatlari</a></li>
+									</ul>
+								</li>
+
+								<li class="nav-item"><a href="#" class="nav-link">Hokim</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">Rahbariyat</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">Tarkibiy tuzilma</a></li>
+
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Tarkibiy
+											bo'linma</span></a>
+									<ul class="nav nav-group-sub" data-submenu-title="Basic components">
+										<li class="nav-item"><a href="#" class="nav-link">Bo'lim</a> </li>
+										<li class="nav-item"><a href="#" class="nav-link">Bo'lim xodimlari</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<div class="content-wrapper">
+			<div class="content-inner">
+				<div class="card mt-3 mx-3">
+					<div class="card-header bg-primary text-light">
+						<h3 class="text-uppercase">Davlat ramzlari</h3>
+					</div>
+
+                    <div class="card-body">
+                        <table class="table table-bordered mb-3 table-striped table-hover Tab"
+                                            id="myTable">
+                                            <thead>
+                                                <tr class="bg-dark text-white NavLink text-center"
+                                                    style="height: 45px;">
+                                                    <th class="id" style="width: 5%;">№</th>
+                                                    <th class="xujjat mobile-table-none" style="width: 10%;">Rasm</th>
+                                                    <th class="korres" style="width: 20%;">Sifat</th>
+                                                    <th class="qisqacha mobile-table-none" style="width: 25%;">Kiritilgan sana</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center id">1</td>
+                                                    <td class="text-color xujjat Fayl mobile-table-none"
+                                                        style="word-break: break-all;">
+                                                        <p><span class="d-flex align-items-center cursor-pointer mb-1"><i
+                                                                    class="far fa-file-pdf mr-1 fa-2x pdfIcon"
+                                                                    style="font-size: 20px;"></i><a class="pt-1"
+                                                                    href="http://213.230.125.86:48908/kiruvchi/api/file/view/76bd7351-5854-45bf-ab61-d8bfe3212428.pdf"
+                                                                    target="_blank" rel="noopener noreferrer">PDF
+                                                                    FILE</a></span></p>
+                                                        <p><span class="d-flex align-items-center cursor-pointer mb-1"><i
+                                                                    class="far fa-file-pdf mr-1 fa-2x pdfIcon"
+                                                                    style="font-size: 20px;"></i><a class="pt-1"
+                                                                    href="http://213.230.125.86:48908/kiruvchi/api/file/view/629e0af7-1f11-4b99-ab73-46dfbbb8f34f.pdf"
+                                                                    target="_blank" rel="noopener noreferrer">PDF
+                                                                    FILE</a></span></p>
+                                                    </td>
+                                                    <td class="text-center korres" style="word-break: break-all;">
+                                                        Prezident Administratsiyasi</td>
+                                                    <td class="harakat mobile-table-none">
+                                                        <div
+                                                            class="icon d-flex justify-content-center align-items-center ">
+                                                            <a class="infoBtn bg-dark" title="Ko'rish"
+                                                                data-bs-toggle="tooltip" data-popup="tooltip"
+                                                                data-bs-placement="top"
+                                                                href="/kiruvchi_bajarish_ijro/272/bajarilmagan"><span><i
+                                                                        class="icon-eye2"></i></span></a></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<script>
+			let myRadio = document.querySelectorAll('.myRadio')
+			for (let i = 0; i < myRadio.length; i++) {
+				myRadio[i].addEventListener('click', function (e) {
+					console.log(myRadio[i].value)
+				})
+
+			}
+		</script>
+</body>
+
+</html>
