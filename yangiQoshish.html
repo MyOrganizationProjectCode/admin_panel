@@ -21,9 +21,9 @@
 	<!-- Core JS files -->
 	<script src="./utils/js/main/jquery.min.js"></script>
 	<script src="./utils/js/main/bootstrap.bundle.min.js"></script>
-	<script src="../../global_assets/js/plugins/uploaders/fileinput/plugins/sortable.min.js"></script>
-	<script src="../../global_assets/js/plugins/uploaders/fileinput/fileinput.min.js"></script>
-	<script src="../../global_assets/js/demo_pages/uploader_bootstrap.js"></script>
+	<script src="./utils/global_assets/js/plugins/uploaders/fileinput/plugins/sortable.min.js"></script>
+	<script src="./utils/global_assets/js/plugins/uploaders/fileinput/fileinput.min.js"></script>
+	<script src="./utils/global_assets/js/demo_pages/uploader_bootstrap.js"></script>
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
@@ -44,6 +44,8 @@
 	<script src="./utils/js/demo_charts/pages/dashboard/light/pies.js"></script>
 	<script src="./utils/js/demo_charts/pages/dashboard/light/bullets.js"></script>
 	<script src="./utils/js/plugins/ui/prism.min.js"></script>
+	<script src="./utils/global_assets/js/main/jquery.min.js"></script>
+	<script src="./utils/global_assets/js/main/bootstrap.bundle.min.js"></script>
 
 	<!-- /theme JS files -->
 	<script src="./utils/js/plugins/forms/selects/select2.min.js"></script>
@@ -330,8 +332,12 @@
 		<div class="content-wrapper">
 			<div class="content-inner">
 				<div class="card mt-3 mx-3">
-					<div class="card-header bg-primary text-light">
-						<h3 class="text-uppercase" style="font-weight: 600;">Umumiy ma'lumot</h3>
+					<div class="card-header d-flex justify-content-between align-items-center bg-primary text-light">
+						<h3 class="text-uppercase" style="font-weight: 600;">Davlat ramzlari</h3>
+						<button class="btn btn-white text-primary">
+							<i class="icon-file-upload"></i>
+							Saqlash
+						</button>
 					</div>
 					<div class="card-body" style="min-height: 80vh;">
 						<div class="form-group form-group-floating row">
@@ -434,14 +440,20 @@
 						<div class="card-body p-0 m-0">
 							<ul class="nav nav-tabs nav-tabs-solid nav-tabs-solid-custom bg-primary NavLink	px-1">
 								<li class="nav-item"><a href="#basic-tab1" class="nav-link active"
-										data-toggle="tab">Qisqacha ma'lumot <img class="ml-2" src="./utils/flags/uz.png"
-											alt="uz"></a>
+										data-toggle="tab"><img class="mr-2" src="./utils/flags/uz.png" alt="uz">
+										Qisqacha ma'lumot <i class="icon-stack-empty ml-2 text-danger"
+											style="font-size: 1.5rem;"></i>
+									</a>
 								</li>
-								<li class="nav-item"><a href="#basic-tab2" class="nav-link" data-toggle="tab">Қисқача
-										маълумот <img class="ml-2" src="./utils/flags/uz.png" alt="uz"> </a>
+								<li class="nav-item"><a href="#basic-tab2" class="nav-link" data-toggle="tab"> <img
+											class="mr-2" src="./utils/flags/uz.png" alt="uz">
+										Қисқача маълумот <i class="icon-stack-text ml-2 text-success"
+											style="font-size: 1.5rem;"></i></a>
 								</li>
-								<li class="nav-item"><a href="#basic-tab3" class="nav-link" data-toggle="tab">Краткая
-										информация <img class="ml-2" src="./utils/flags/ru.png" alt="ru"></a></li>
+								<li class="nav-item"><a href="#basic-tab3" class="nav-link" data-toggle="tab">
+										<img class="ml-2" src="./utils/flags/ru.png" alt="ru">
+										Краткая информация <i class="icon-stack-text ml-2 text-success"
+											style="font-size: 1.5rem;"></i> </a> </li>
 
 							</ul>
 

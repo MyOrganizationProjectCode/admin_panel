@@ -172,8 +172,7 @@
 										<i class="icon-wrench"></i>
 									</button>
 								</div>
-								<a href="#" class="flex-1 text-center"><img
-										src="./utils/images/demo/users/face6.jpg"
+								<a href="#" class="flex-1 text-center"><img src="./utils/images/demo/users/face6.jpg"
 										class="img-fluid rounded-circle shadow-sm" width="80" height="80" alt=""></a>
 								<div class="flex-1 text-right">
 									<button type="button"
@@ -329,8 +328,8 @@
 		<div class="content-wrapper">
 			<div class="content-inner">
 				<div class="card mt-3 mx-3">
-					<div class="card-header d-flex justify-content-between bg-primary text-light">
-						<h1 class="text-uppercase" style="font-weight: 600;">Davlat ramzlari</h3>
+					<div class="card-header d-flex justify-content-between align-items-center bg-primary text-light">
+						<h3 class="text-uppercase" style="font-weight: 600;">Davlat ramzlari</h3>
 						<a href="./yangiQoshish.html" class="btn btn-white text-primary">
 							<i class="icon-plus3"></i>
 							Yangi qo'shish
@@ -469,6 +468,38 @@
 								</tr>
 							</tbody>
 						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="kvFileinputModal" class="file-zoom-dialog modal fade" aria-labelledby="kvFileinputModalLabel"
+			tabindex="-1">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header align-items-center">
+						<h6 class="modal-title">Detailed Preview <small><span class="kv-zoom-title"></span></small></h6>
+						<div class="kv-zoom-actions btn-group"><button type="button"
+								class="btn btn-light btn-icon btn-header-toggle btn-sm btn-kv-toggleheader"
+								title="Toggle header" data-toggle="button" aria-pressed="false" autocomplete="off"><i
+									class="icon-menu-open"></i></button><button type="button"
+								class="btn btn-light btn-icon btn-sm btn-kv-fullscreen" title="Toggle full screen"
+								data-toggle="button" aria-pressed="false" autocomplete="off"><i
+									class="icon-screen-full"></i></button><button type="button"
+								class="btn btn-light btn-icon btn-sm btn-kv-borderless" title="Toggle borderless mode"
+								data-toggle="button" aria-pressed="false" autocomplete="off"><i
+									class="icon-alignment-unalign"></i></button><button type="button"
+								class="btn btn-light btn-icon btn-sm btn-kv-close" title="Close detailed preview"
+								data-dismiss="modal" aria-hidden="true"><i
+									class="icon-cross2 font-size-base"></i></button></div>
+					</div>
+					<div class="modal-body">
+						<div class="floating-buttons btn-group"></div>
+						<div class="kv-zoom-body file-zoom-content"></div>
+						<button type="button" class="btn btn-navigate btn-kv-prev" title="View previous file"><i
+								class="icon-arrow-left32"></i></button> <button type="button"
+							class="btn btn-navigate btn-kv-next" title="View next file"><i
+								class="icon-arrow-right32"></i></button>
 					</div>
 				</div>
 			</div>
