@@ -21,9 +21,9 @@
 	<!-- Core JS files -->
 	<script src="./utils/js/main/jquery.min.js"></script>
 	<script src="./utils/js/main/bootstrap.bundle.min.js"></script>
-	<script src="../../global_assets/js/plugins/uploaders/fileinput/plugins/sortable.min.js"></script>
-	<script src="../../global_assets/js/plugins/uploaders/fileinput/fileinput.min.js"></script>
-	<script src="../../global_assets/js/demo_pages/uploader_bootstrap.js"></script>
+	<script src="./utils/global_assets/js/plugins/uploaders/fileinput/plugins/sortable.min.js"></script>
+	<script src="./utils/global_assets/js/plugins/uploaders/fileinput/fileinput.min.js"></script>
+	<script src="./utils/global_assets/js/demo_pages/uploader_bootstrap.js"></script>
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
@@ -44,6 +44,7 @@
 	<script src="./utils/js/demo_charts/pages/dashboard/light/pies.js"></script>
 	<script src="./utils/js/demo_charts/pages/dashboard/light/bullets.js"></script>
 	<script src="./utils/js/plugins/ui/prism.min.js"></script>
+	<script src="./utils/global_assets/js/main/jquery.min.js"></script>
 
 	<!-- /theme JS files -->
 	<script src="./utils/js/plugins/forms/selects/select2.min.js"></script>
@@ -95,16 +96,18 @@
 		.nav-tabs-solid-custom .nav-link.active {
 			background-color: #fff;
 			color: #000;
-			margin-top: 8px;
 			border-top-left-radius: 10px;
 			border-top-right-radius: 10px;
-			padding-top: 12px;
 			font-weight: bold;
 		}
 
-		/* .NavLink li a {
-			margin-top: 0;
-		} */
+		.nav-tabs-solid-custom .nav-link.active .nav-tabs-solid-custom .nav-link.active span {
+			color: red !important;
+		}
+
+		.multiselect {
+            height: 55px !important;
+        }
 	</style>
 </head>
 
@@ -329,190 +332,214 @@
 			<div class="content-inner">
 				<div class="card mt-3 mx-3">
 					<div class="card-header d-flex justify-content-between align-items-center bg-primary text-light">
-						<h3 class="text-uppercase" style="font-weight: 600;">Davlat ramzlari</h3>
-						<a href="./yangiQoshish.html" class="btn btn-white text-primary">
-							<i class="icon-plus3"></i>
-							Yangi qo'shish
-						</a>
+						<h3 class="text-uppercase" style="font-weight: 600;">Davlat ramzlari 2</h3>
+						<button class="btn btn-white text-primary">
+							<i class="icon-file-upload"></i>
+							Saqlash
+						</button>
 					</div>
+					<div class="card-body" style="min-height: 80vh;">
+						<div class="form-group form-group-floating row">
+							<div class="col-lg-3">
+								<div class="form-group-feedback form-group-feedback-right">
+									<input type="text" class="form-control form-control-outline"
+										placeholder="Placeholder">
+									<div class="form-control-feedback text-bold text-primary">
+										<img src="./utils/flags/uz.png" alt="uz">
+									</div>
+									<label class="label-floating">Sarlavha</label>
+								</div>
+							</div>
 
-					<div class="card-body">
-						<table class="table table-bordered mb-3 table-striped table-hover Tab" id="myTable">
-							<thead>
-								<tr class="bg-dark text-white NavLink text-center" style="height: 45px;">
-									<th class="id" style="width: 5%;">№</th>
-									<th class="xujjat mobile-table-none" style="width: 20%;">Rasm</th>
-									<th class="korres" style="width: 30%;">Sarlovha</th>
-									<th class="korres" style="width: 35%;">Qisqacha ma'lumot</th>
-									<th class="qisqacha mobile-table-none" style="width: 10%;">Kiritilgan sana</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="text-center id">1</td>
-									<td class="text-color text-center Fayl mobile-table-none"
-										style="word-break: break-all;">
-										<img src="./utils/images/gerb.svg" width="80" />
-									</td>
-									<td class="text-center korres" style="word-break: break-all;">
-										Prezident Administratsiyasi
-									</td>
-									<td class="text-center korres" style="word-break: break-all;">
-										Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab labore reiciendis culpa.
-									</td>
-									<td class="harakat mobile-table-none">
-										<div class="icon d-flex justify-content-center align-items-center ">
+							<div class="col-lg-3">
+								<div class="form-group-feedback form-group-feedback-right">
+									<input type="text" class="form-control form-control-outline"
+										placeholder="Placeholder">
+									<div class="form-control-feedback text-bold text-primary">
+										<img src="./utils/flags/uz.png" alt="uz">
 
-											<a class="infoBtn bg-primary" title="Ko'rish" data-bs-toggle="tooltip"
-												data-popup="tooltip" data-bs-placement="top"
-												href="/kiruvchi_bajarish_ijro/272/bajarilmagan">
-												<span>
-													<i class="icon-link"></i>
-												</span>
-											</a>
+									</div>
+									<label class="label-floating">Сарлавҳа</label>
+								</div>
+							</div>
 
-											<a class="infoBtn bg-info" title="Ko'rish" data-bs-toggle="tooltip"
-												data-popup="tooltip" data-bs-placement="top"
-												href="/kiruvchi_bajarish_ijro/272/bajarilmagan">
-												<span>
-													<i class="icon-pencil7"></i>
-												</span>
-											</a>
+							<div class="col-lg-3">
+								<div class="form-group-feedback form-group-feedback-right">
+									<input type="text" class="form-control form-control-outline"
+										placeholder="Placeholder">
+									<div class="form-control-feedback text-bold text-primary">
+										<img src="./utils/flags/ru.png" alt="ru">
+									</div>
+									<label class="label-floating">Заголовок</label>
+								</div>
+							</div>
+                            
+                            <div class="col-lg-3">
+								<div class="form-group-feedback form-group-feedback-right">
+									<input type="text" class="form-control form-control-outline"
+										placeholder="Placeholder">
+									<div class="form-control-feedback text-bold text-primary">
+										<img src="./utils/flags/ru.png" alt="ru">
+									</div>
+									<label class="label-floating">Заголовок</label>
+								</div>
+							</div>
 
-											<a class="infoBtn bg-danger" title="Ko'rish" data-bs-toggle="tooltip"
-												data-popup="tooltip" data-bs-placement="top"
-												href="/kiruvchi_bajarish_ijro/272/bajarilmagan">
-												<span>
-													<i class="icon-folder-remove"></i>
-												</span>
-											</a>
+						</div>
+
+						<div class="form-group row">
+							<div class="col-lg-12">
+								<div class="file-input file-input-ajax-new">
+									<div class="file-preview">
+										<button type="button" class="close fileinput-remove" aria-label="Close">
+											<span aria-hidden="true">×</span>
+										</button>
+										<div class=" file-drop-zone clearfix">
+											<div class="file-drop-zone-title">Fayllarni yo'naltiring…
+											</div>
+											<div class="file-preview-thumbnails clearfix"></div>
+											<div class="file-preview-status text-center text-success"></div>
+											<div class="kv-fileinput-error file-error-message" style="display: none;">
+											</div>
+										</div>
+									</div>
+									<div class="kv-upload-progress kv-hidden" style="display: none;">
+										<div class="progress">
+											<div class="progress-bar bg-success progress-bar-success progress-bar-striped active progress-bar-animated"
+												role="progressbar" aria-valuenow="0" aria-valuemin="0"
+												aria-valuemax="100" style="width: 0%;">
+												0%
+											</div>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+									<div class="input-group file-caption-main">
+										<div class="file-caption form-control kv-fileinput-caption" tabindex="500">
+											<span class="file-caption-icon"><i
+													class="glyphicon glyphicon-file"></i></span>
+											<input readonly="" class="file-caption-name"
+												placeholder="Fayllarni tanlang ..." title="">
+										</div>
+										<div class="input-group-btn input-group-append">
+											<button type="button" title="Clear all unprocessed files"
+												class="btn btn-default btn-secondary fileinput-remove fileinput-remove-button"
+												tabindex="500"><i class="icon-cross2 font-size-base mr-2"></i> <span
+													class="hidden-xs">Remove</span></button>
+											<button type="button" title="Abort ongoing upload"
+												class="btn btn-default btn-secondary kv-hidden fileinput-cancel fileinput-cancel-button"
+												style="display: none;"><i class="glyphicon glyphicon-ban-circle"></i>
+												<span class="hidden-xs">Cancel</span></button>
+
+											<a href="http://localhost" title="Upload selected files"
+												class="btn btn-default btn-secondary fileinput-upload fileinput-upload-button"
+												tabindex="500"><i class="icon-file-upload2 mr-2"></i> <span
+													class="hidden-xs">Upload</span></a>
+											<div class="btn btn-primary btn-file" tabindex="500"><i
+													class="icon-file-plus mr-2"></i> <span
+													class="hidden-xs">Tanlash</span><input type="file"
+													class="file-input-ajax" multiple="multiple" data-fouc=""
+													id="2b1z0hjwcx"></div>
+										</div>
+									</div>
+								</div>
+								<!-- <span class="form-text text-muted">This scenario uses asynchronous/parallel uploads.
+									Uploading itself is turned off in live preview.</span> -->
+							</div>
+						</div>
+
+
+						<div class="card-body p-0 m-0">
+							<ul class="nav nav-tabs nav-tabs-solid nav-tabs-solid-custom bg-primary NavLink	px-1">
+								<li class="nav-item"><a href="#basic-tab1" class="nav-link active"
+										data-toggle="tab"><img class="mr-2" src="./utils/flags/uz.png" alt="uz">
+										Qisqacha ma'lumot <i class="icon-stack-empty ml-2 text-danger"
+											style="font-size: 1.5rem;"></i>
+									</a>
+								</li>
+								<li class="nav-item"><a href="#basic-tab2" class="nav-link" data-toggle="tab"> <img
+											class="mr-2" src="./utils/flags/uz.png" alt="uz">
+										Қисқача маълумот <i class="icon-stack-text ml-2 text-success"
+											style="font-size: 1.5rem;"></i></a>
+								</li>
+								<li class="nav-item"><a href="#basic-tab3" class="nav-link" data-toggle="tab">
+										<img class="ml-2" src="./utils/flags/ru.png" alt="ru">
+										Краткая информация <i class="icon-stack-text ml-2 text-success"
+											style="font-size: 1.5rem;"></i> </a> </li>
+
+							</ul>
+
+							<div class="tab-content">
+								<div class="tab-pane fade mt-3 show active" id="basic-tab1">
+									<div style="margin:auto; max-width:100%;">
+										<div class="hs-docs-content-divider">
+											<link rel="stylesheet"
+												href="./utils/richtexteditor/rte_theme_default.css" />
+											<script type="text/javascript" src="./utils/richtexteditor/rte.js"></script>
+											<script>RTE_DefaultConfig.url_base = 'richtexteditor'</script>
+											<script type="text/javascript"
+												src='./utils/richtexteditor/plugins/all_plugins.js'></script>
+											<div id="div_editor1">
+												<h1>Keldiyor</h1>
+											</div>
+
+											<script>
+												var editor1 = new RichTextEditor("#div_editor1");
+
+											</script>
 
 										</div>
-									</td>
-								</tr>
 
-								<tr>
-									<td class="text-center id">1</td>
-									<td class="text-color text-center Fayl mobile-table-none"
-										style="word-break: break-all;">
-										<img src="./utils/images/signature.png" width="80" />
-									</td>
-									<td class="text-center korres" style="word-break: break-all;">
-										Prezident Administratsiyasi
-									</td>
-									<td class="text-center korres" style="word-break: break-all;">
-										Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab labore reiciendis culpa.
-									</td>
-									<td class="harakat mobile-table-none">
-										<div class="icon d-flex justify-content-center align-items-center ">
+									</div>
+								</div>
 
-											<a class="infoBtn bg-primary" title="Ko'rish" data-bs-toggle="tooltip"
-												data-popup="tooltip" data-bs-placement="top"
-												href="/kiruvchi_bajarish_ijro/272/bajarilmagan">
-												<span>
-													<i class="icon-link"></i>
-												</span>
-											</a>
+								<div class="tab-pane fade mt-3" id="basic-tab2">
+									<div style="margin:auto; max-width:100%;">
+										<div class="hs-docs-content-divider">
+											<link rel="stylesheet"
+												href="./utils/richtexteditor/rte_theme_default.css" />
+											<script type="text/javascript" src="./utils/richtexteditor/rte.js"></script>
+											<script>RTE_DefaultConfig.url_base = 'richtexteditor'</script>
+											<script type="text/javascript"
+												src='./utils/richtexteditor/plugins/all_plugins.js'></script>
+											<div id="div_editor2">
+												<h1>Keldiyor</h1>
+											</div>
 
-											<a class="infoBtn bg-info" title="Ko'rish" data-bs-toggle="tooltip"
-												data-popup="tooltip" data-bs-placement="top"
-												href="/kiruvchi_bajarish_ijro/272/bajarilmagan">
-												<span>
-													<i class="icon-pencil7"></i>
-												</span>
-											</a>
+											<script>
+												var editor2 = new RichTextEditor("#div_editor2");
 
-											<a class="infoBtn bg-danger" title="Ko'rish" data-bs-toggle="tooltip"
-												data-popup="tooltip" data-bs-placement="top"
-												href="/kiruvchi_bajarish_ijro/272/bajarilmagan">
-												<span>
-													<i class="icon-folder-remove"></i>
-												</span>
-											</a>
+											</script>
 
 										</div>
-									</td>
-								</tr>
 
-								<tr>
-									<td class="text-center id">1</td>
-									<td class="text-color text-center Fayl mobile-table-none"
-										style="word-break:break-all;">
-										<img src="./utils/images/logo_dark.png" width="80" />
-									</td>
+									</div>
+								</div>
 
-									<td class="text-center korres" style="word-break: break-all;">
-										Prezident Administratsiyasi
-									</td>
+								<div class="tab-pane fade mt-3" id="basic-tab3">
+									<div style="margin:auto; max-width:100%;">
+										<div class="hs-docs-content-divider">
+											<link rel="stylesheet"
+												href="./utils/richtexteditor/rte_theme_default.css" />
+											<script type="text/javascript" src="./utils/richtexteditor/rte.js"></script>
+											<script>RTE_DefaultConfig.url_base = 'richtexteditor'</script>
+											<script type="text/javascript"
+												src='./utils/richtexteditor/plugins/all_plugins.js'></script>
+											<div id="div_editor3">
+												<h1>Keldiyor</h1>
+											</div>
 
-									<td class="text-center korres" style="word-break: break-all;">
-										Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab labore reiciendis culpa.
-									</td>
+											<script>
+												var editor3 = new RichTextEditor("#div_editor3");
 
-									<td class="harakat mobile-table-none">
-										<div class="icon d-flex justify-content-center align-items-center ">
-
-											<a class="infoBtn bg-primary" title="Ko'rish" data-bs-toggle="tooltip"
-												data-popup="tooltip" data-bs-placement="top"
-												href="/kiruvchi_bajarish_ijro/272/bajarilmagan">
-												<span>
-													<i class="icon-link"></i>
-												</span>
-											</a>
-
-											<a class="infoBtn bg-info" title="Ko'rish" data-bs-toggle="tooltip"
-												data-popup="tooltip" data-bs-placement="top"
-												href="/kiruvchi_bajarish_ijro/272/bajarilmagan">
-												<span>
-													<i class="icon-pencil7"></i>
-												</span>
-											</a>
-
-											<a class="infoBtn bg-danger" title="Ko'rish" data-bs-toggle="tooltip"
-												data-popup="tooltip" data-bs-placement="top"
-												href="/kiruvchi_bajarish_ijro/272/bajarilmagan">
-												<span>
-													<i class="icon-folder-remove"></i>
-												</span>
-											</a>
+											</script>
 
 										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-		</div>
 
-		<div id="kvFileinputModal" class="file-zoom-dialog modal fade" aria-labelledby="kvFileinputModalLabel"
-			tabindex="-1">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header align-items-center">
-						<h6 class="modal-title">Detailed Preview <small><span class="kv-zoom-title"></span></small></h6>
-						<div class="kv-zoom-actions btn-group"><button type="button"
-								class="btn btn-light btn-icon btn-header-toggle btn-sm btn-kv-toggleheader"
-								title="Toggle header" data-toggle="button" aria-pressed="false" autocomplete="off"><i
-									class="icon-menu-open"></i></button><button type="button"
-								class="btn btn-light btn-icon btn-sm btn-kv-fullscreen" title="Toggle full screen"
-								data-toggle="button" aria-pressed="false" autocomplete="off"><i
-									class="icon-screen-full"></i></button><button type="button"
-								class="btn btn-light btn-icon btn-sm btn-kv-borderless" title="Toggle borderless mode"
-								data-toggle="button" aria-pressed="false" autocomplete="off"><i
-									class="icon-alignment-unalign"></i></button><button type="button"
-								class="btn btn-light btn-icon btn-sm btn-kv-close" title="Close detailed preview"
-								data-dismiss="modal" aria-hidden="true"><i
-									class="icon-cross2 font-size-base"></i></button></div>
-					</div>
-					<div class="modal-body">
-						<div class="floating-buttons btn-group"></div>
-						<div class="kv-zoom-body file-zoom-content"></div>
-						<button type="button" class="btn btn-navigate btn-kv-prev" title="View previous file"><i
-								class="icon-arrow-left32"></i></button> <button type="button"
-							class="btn btn-navigate btn-kv-next" title="View next file"><i
-								class="icon-arrow-right32"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -525,7 +552,14 @@
 				})
 
 			}
+
+
 		</script>
+
+
+		<script src="./utils/richtexteditor/plugins/all_plugins.js"></script>
+		<script src="./utils/richtexteditor/rte.js"></script>
+		<script src="./utils/res/patch.js"></script>
 </body>
 
 </html>
